@@ -1,0 +1,26 @@
+
+<div class="container">
+  <h1>Welcome to TOI News Feed</h1>
+
+<table class="table table-hover table-striped table-bordered table-fixes-header">
+  <thead class="header">
+    <tr>
+          <th class="text-center">Title</th>
+          <th class="text-center">Description</th>
+          <th class="text-center">PubDate</th>
+          <th class="text-center">Link</th>
+        </tr>
+  </thead>
+<tbody class="searchable">
+   <tr *ngFor="let data of NewsFeed">
+    <td>{{data.title}}</td>
+    <td>{{data.description}}</td>
+     <td>{{data.pubDate}}</td>
+     <td>{{data.link}}</td>
+   </tr>
+  </tbody>
+</table>
+
+
+</div>
+
